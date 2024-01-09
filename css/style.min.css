@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Monofett;
+  font-display: swap;
+  src: url("../fonts/Monofett-Regular.woff2") format("woff2"), url("../fonts/Monofett-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: RubikPuddles;
+  font-display: swap;
+  src: url("../fonts/RubikPuddles-Regular.woff2") format("woff2"), url("../fonts/RubikPuddles-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width: 992px) {
+  .content .row {
+    flex-direction: column;
+  }
+  .module {
+    width: 100% !important;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+}
+.content .row {
+  gap: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.module-content {
+  color: #FFF;
+  font-family: Monofett;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.module {
+  width: 50%;
+  border-radius: 55px;
+  background: #6580E1;
+}
+.module-header {
+  padding: 21px;
+  text-align: center;
+}
+.module-header img {
+  width: 50%;
+}
+.module-footer {
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: RubikPuddles;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+.module-footer p.active {
+  color: #F7B801;
+}
+.module-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 32px;
+}
+.module-content .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+.module-content .buttons svg.active path {
+  fill: #F7B801;
+}
+.module-content .buttons svg {
+  cursor: pointer;
+}
+.module-content .nib {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.module-content .nib .nib_elem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.module-content .nib .nib_elem img {
+  width: 64px;
+}
+.module-content .dotline-row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.module-content .dotline-row .dotline-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.module-content .dotline-row .dotline-column .dot {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.module-content .dotline-row .dotline-column .dot.active {
+  background-color: #F7B801;
+}

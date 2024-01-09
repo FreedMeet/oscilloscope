@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Oscilloscope</title>
+</head>
+<body>
+
+<div class="content">
+    <div class="row">
+        <div class="module module_synth">
+    <div class="module-header">
+        <img src="./img/Hardware/Synth.png" alt="Synth">
+    </div>
+    <div class="module-content">
+        <div class="buttons waves">
+            <svg width="64" height="32" viewBox="0 0 28 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.5489 4.46742C27.2222 4.38112 26.8862 4.56563 26.7977 4.88408C26.4465 6.13404 25.341 8.73813 24.1653 8.80956C23.7439 8.8423 22.6048 8.49409 21.0535 4.81563C19.6427 1.47049 18.299 -0.0294713 16.8271 0.0865968C14.8116 0.250283 13.7916 3.57161 13.5076 4.68468C13.4862 4.72039 13.471 4.76206 13.4587 4.80372C13.1045 6.05369 11.9868 8.66075 10.8019 8.7292C10.3775 8.75599 9.22619 8.41671 7.66266 4.7323C6.24264 1.39013 4.88982 -0.109826 3.40873 0.00624185C1.21917 0.184808 0.196147 4.05374 0.0159739 4.82753C-0.0603708 5.14895 0.144233 5.46739 0.474042 5.5418C0.803851 5.6162 1.13061 5.4168 1.20695 5.09538C1.57951 3.524 2.54146 1.27109 3.51256 1.19371C3.89734 1.16395 4.96311 1.48834 6.53581 5.18764C7.92528 8.46135 9.34529 10.003 10.8813 9.91667C13.0251 9.7887 14.2527 6.36618 14.5703 5.3543C14.607 5.30073 14.6314 5.23823 14.6467 5.17276C15.007 3.64602 15.9812 1.34846 16.9309 1.27109C17.3126 1.2443 18.3662 1.5687 19.9236 5.26502C21.2642 8.44945 22.6384 10 24.1134 10C24.1562 10 24.1989 10 24.2417 9.99702C26.6022 9.85715 27.8451 5.67274 27.9795 5.19657C28.065 4.8811 27.8757 4.55373 27.5489 4.46742Z"
+                      fill="white"/>
+            </svg>
+            <svg width="64" height="32" viewBox="0 0 28 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 0.195306V9.80463C28 9.91251 27.7551 9.99997 27.4531 9.99997C27.151 9.99997 26.9061 9.91251 26.9061 9.80463V1.02258L14.4892 9.89197C14.3757 9.97302 14.1212 10.0155 13.8745 9.99478C13.6278 9.97402 13.4534 9.89529 13.4534 9.80474V1.02258L1.03613 9.89197C0.940287 9.96044 0.74705 9.99997 0.546701 9.99997C0.464459 9.99997 0.380981 9.99334 0.302449 9.97932C0.0322262 9.93106 -0.0772234 9.8138 0.0578881 9.71729L13.5109 0.107962C13.6244 0.026913 13.8788 -0.0155993 14.1256 0.0052704C14.3723 0.0260296 14.5467 0.10476 14.5467 0.195306V8.97735L26.9639 0.107962C27.0774 0.026913 27.3319 -0.0155993 27.5786 0.0052704C27.8256 0.0260296 28 0.10465 28 0.195306Z"
+                      fill="white"/>
+            </svg>
+            <svg width="64" height="32" viewBox="0 0 29 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3949 12H3.3082V1.33333H0V0H5.18928V10.6667H8.51377V0H15.4938V10.4444H19.1369V0H26.1163V10.4444H29V11.7778H24.2352V1.33333H21.0179V11.7778H13.6128V1.33333H10.3949V12Z"
+                      fill="white"/>
+            </svg>
+            <svg width="64" height="32" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.290146 11.8123C0.610162 12.0601 1.06837 11.9925 1.30838 11.6621L8.27962 2.06055L15.2545 11.6621C15.36 11.8047 15.5091 11.9061 15.6763 11.9437L15.84 11.9812C16.12 12.0451 16.4109 11.9362 16.5818 11.6996L23.6367 1.98545L30.6916 11.6996C30.8334 11.8949 31.0516 12 31.2735 12C31.4262 12 31.5789 11.9512 31.7099 11.8498C32.0299 11.602 32.0953 11.1288 31.8553 10.7984L24.2186 0.28444C23.9422 -0.0948134 23.3313 -0.0948134 23.0549 0.28444L15.9309 10.0925L8.86147 0.35954C8.58509 -0.0197134 7.97416 -0.0197134 7.69778 0.35954L0.144685 10.7609C-0.095327 11.0913 -0.0298692 11.5644 0.290146 11.8123Z"
+                      fill="white"/>
+            </svg>
+        </div>
+        <div class="nib">
+            <div class="nib_fm nib_elem">
+                <p>FM</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+            <div class="nib_fm nib_elem">
+                <img src="./img/Union.svg" alt="union" draggable="false">
+                <p>Depth</p>
+            </div>
+        </div>
+
+        <div class="dotline signal">
+            <p>Signal</p>
+            <div class="dotline-row">
+                <div class="dotline-column">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotline-column">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotline-column">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotline-column">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+        <div class="dotline filter">
+            <p>filter</p>
+            <div class="dotline-row">
+                <div class="dotline-column">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotline-column">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotline-column">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotline-column">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nib">
+            <div class="nib_freq nib_elem">
+                <p>FREQ</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+            <div class="nib_res nib_elem">
+                <img src="./img/Union.svg" alt="union" draggable="false">
+                <p>Res</p>
+            </div>
+        </div>
+
+        <div class="buttons filters">
+            <svg width="64" height="64" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.8287 25.4497H20.7843C20.3026 22.5429 19.7932 19.5837 19.0246 17.3473C18.0434 14.4918 16.7111 13.1038 14.9514 13.1038C13.4674 13.1038 12.1142 14.4359 11.0379 16.9558C10.1034 19.1441 9.42501 22.0722 9.06725 25.4497H4.96524V0.586007C4.96524 0.262362 4.70288 0 4.37924 0C4.0556 0 3.79324 0.262362 3.79324 0.586007V25.4497H1.00104C0.677398 25.4497 0.415039 25.7121 0.415039 26.0358C0.415039 26.3594 0.677398 26.6218 1.00104 26.6218H3.79324V29.414C3.79324 29.7376 4.0556 30 4.37924 30C4.70288 30 4.96524 29.7376 4.96524 29.414V26.6218H20.2854H20.2867H20.2881H29.829C30.1527 26.6218 30.415 26.3594 30.415 26.0358C30.4147 25.7121 30.1524 25.4497 29.8287 25.4497ZM12.1155 17.4162C12.9678 15.4207 14.0014 14.2759 14.9514 14.2759C16.1483 14.2759 17.1179 15.4051 17.9162 17.7283C18.6374 19.8269 19.132 22.6529 19.5964 25.4497H10.2455C10.5924 22.2756 11.2506 19.4416 12.1155 17.4162Z"
+                      fill="white"/>
+            </svg>
+            <svg width="64" height="64" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.415 26.0358C30.415 26.3594 30.1527 26.6218 29.829 26.6218H4.96529V29.414C4.96529 29.7376 4.70293 30 4.37928 30C4.05564 30 3.79328 29.7376 3.79328 29.414V26.6218H1.00105C0.677401 26.6218 0.415039 26.3594 0.415039 26.0358C0.415039 25.7121 0.677401 25.4497 1.00105 25.4497H3.79328V0.586007C3.79328 0.262362 4.05564 0 4.37928 0C4.70293 0 4.96529 0.262362 4.96529 0.586007V24.9691L9.47679 18.156C10.4663 16.6616 12.3137 15.4909 13.6829 15.4909H26.3312C26.6549 15.4909 26.9172 15.7533 26.9172 16.0769C26.9172 16.4006 26.6549 16.6629 26.3312 16.6629H13.6825C12.7175 16.6629 11.2086 17.663 10.4537 18.8033L6.0525 25.4497H29.829C30.1527 25.4497 30.415 25.7121 30.415 26.0358Z"
+                      fill="white"/>
+            </svg>
+            <svg width="64" height="64" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.829 25.4497H26.0635L21.2337 18.156C20.2442 16.6616 18.3968 15.4909 17.0276 15.4909H4.96529V0.586007C4.96529 0.262362 4.70293 0 4.37928 0C4.05564 0 3.79328 0.262362 3.79328 0.586007V25.4497H1.00105C0.677401 25.4497 0.415039 25.7121 0.415039 26.0358C0.415039 26.3594 0.677401 26.6218 1.00105 26.6218H3.79328V29.414C3.79328 29.7376 4.05564 30 4.37928 30C4.70293 30 4.96529 29.7376 4.96529 29.414V26.6218H29.829C30.1527 26.6218 30.415 26.3594 30.415 26.0358C30.415 25.7121 30.1527 25.4497 29.829 25.4497ZM4.96529 16.6626H17.0276C17.9926 16.6626 19.5015 17.6627 20.2565 18.8029L24.658 25.4497H4.96529V16.6626Z"
+                      fill="white"/>
+            </svg>
+
+        </div>
+    </div>
+</div>
+        <div class="module module_reverb">
+    <div class="module-header">
+        <img src="./img/Hardware/Reverb.png" alt="reverb">
+    </div>
+
+    <div class="module-content">
+        <div class="nib">
+            <div class="nib_size nib_elem">
+                <p>SIZE</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+        </div>
+        <div class="nib">
+            <div class="nib_drywet nib_elem">
+                <p>Dry|wet</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="row">
+        <div class="module module_chorus">
+    <div class="module-header">
+        <img src="./img/Hardware/Chorus.png" alt="delay">
+    </div>
+    <div class="module-content">
+        <div class="nib">
+            <div class="nib_drywet nib_elem">
+                <p>dry|wet</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+        </div>
+        <div class="nib">
+            <div class="nib_depth nib_elem">
+                <p>depth</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+        </div>
+        <div class="nib">
+            <div class="nib_rate nib_elem">
+                <p>rate</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+        </div>
+        <div class="nib">
+            <div class="nib_phase nib_elem">
+                <p>phase</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+        </div>
+        <div class="nib">
+            <div class="nib_feedback nib_elem">
+                <p>feedback</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+        </div>
+    </div>
+
+    <div class="module-footer">
+        <p class="active">CHORUS</p>
+        <p>FLANGER</p>
+    </div>
+</div>
+        <div class="module module_delay">
+    <div class="module-header">
+        <img src="./img/Hardware/Delay.png" alt="delay">
+    </div>
+
+    <div class="module-content">
+        <div class="nib">
+            <div class="nib_drywet nib_elem">
+                <p>Dry|wet</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+        </div>
+        <div class="nib">
+            <div class="nib_feedback nib_elem">
+                <p>Feedback</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+        </div>
+        <div class="nib">
+            <div class="nib_time nib_elem">
+                <p>time</p>
+                <img src="./img/Union.svg" alt="union" draggable="false">
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<script src="js/app.min.js"></script>
+</body>
+</html>
